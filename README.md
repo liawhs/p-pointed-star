@@ -1,15 +1,16 @@
 # Drawing a regular p-pointed star
 
 ![Regular star polygons](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/Regular_star_polygons.png)
+https://commons.wikimedia.org/wiki/File:Regular_star_polygons.svg
 
 
-A regular star polygon {p/q}, with p, q positive integers, is a figure formed by connecting with straight lines every qth point out of p regularly spaced points lying on a circumference, where p and q are relatively prime and q > 1. Without loss of generality, take q < p/2 since {p/q} is equal to {p/p-q}. (Online reference: https://en.wikipedia.org/wiki/Star_polygon) 
+A regular star polygon {p/q}, with p, q positive integers, is a figure formed by connecting with straight lines every qth point out of p regularly spaced points lying on a circumference, where p and q are relatively prime and q > 1. Without loss of generality, take q < p/2 since {p/q} is equal to {p/p-q}. (Online reference: https://mathworld.wolfram.com/StarPolygon.html) 
 
 
 Each straight line connects a pair of points. We can consider q as the number of sides of the polygon between a pair of points.
 
 
-A star polygon can also be generalized to the star figure when the greatest common divisor (p,q) != 1. For such a figure, all points are not connected after the first pass. Then start with the first unconnected point and repeat the procedure. Repeat until all points are connected. For (p, q) != 1, the {p/q} symbol can be factored as {p/q} = n {p'/q'}. If q = 1, a regular polygon {p} is obtained. (Online reference: https://en.wikipedia.org/wiki/Star_polygon)
+A star polygon can also be generalized to the star figure when the greatest common divisor (p,q) != 1. For such a figure, all points are not connected after the first pass. Then start with the first unconnected point and repeat the procedure. Repeat until all points are connected. For (p, q) != 1, the {p/q} symbol can be factored as {p/q} = n {p'/q'}. If q = 1, a regular polygon {p} is obtained. (Online reference: https://mathworld.wolfram.com/StarPolygon.html)
 
 
 ---
