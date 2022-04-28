@@ -1,6 +1,6 @@
 # Drawing a regular p-pointed star
 
-![Regular star polygons](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/Regular_star_polygons.png)
+![Regular star polygons](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/Regular_star_polygons.png)
 
 
 A regular star polygon {p/q}, with p, q positive integers, is a figure formed by connecting with straight lines every qth point out of p regularly spaced points lying on a circumference, where p and q are relatively prime and q > 1. Without loss of generality, take q < p/2 since {p/q} is equal to {p/p-q}. (Online reference: https://en.wikipedia.org/wiki/Star_polygon) 
@@ -17,7 +17,7 @@ A star polygon can also be generalized to the star figure when the greatest comm
 The following star figure {10, 3} contained in a regular 10-sided polygon will be used to reach a general formula for the interior angle x of a regular p-pointed star.
 
 
-![{10, 3} star contained in regular 10-sided polygon](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/%7B10%2C3%7D_star_contained_n_regular_10-sided_polygon.png)
+![{10, 3} star contained in regular 10-sided polygon](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/%7B10%2C3%7D_star_contained_n_regular_10-sided_polygon.png)
 
 
 The interior angle <img src="https://render.githubusercontent.com/render/math?math=\alpha"> of a regular p-sided polygon is
@@ -175,16 +175,24 @@ Alternatively, you may let the turtle go to the center of the star, turn the tur
 ## Sample output
 
  - 5-pointed star pointing at various angles (0, 10, 20, ... 90 degrees)
- ![5-pointed star pointing at various angles](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/5-pointed%20star%20pointing%20at%20various%20angles.png)
+ 
+ 
+ ![5-pointed star pointing at various angles](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/5-pointed%20star%20pointing%20at%20various%20angles.png)
 
 
  - 5-, 6-, 7-, 8-, 9-, and 10-pointed stars
- ![5-, 6-, 7-, 8-, 9-, and 10-pointed stars](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/5%20to%2010-pointed%20stars.png)
+
+
+ ![5-, 6-, 7-, 8-, 9-, and 10-pointed stars](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/5%20to%2010-pointed%20stars.png)
 
 
  - 11-, 12-, 13-, 14-, 15-,and 16-pointed stars
- ![11-, 12-, 13-, 14-, 15-,and 16-pointed stars](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/11%20to%2016-pointed%20stars.png)
+
+
+ ![11-, 12-, 13-, 14-, 15-,and 16-pointed stars](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/11%20to%2016-pointed%20stars.png)
 
 
  - 17-, 18-, 19-, and 20-pointed stars
- ![17-, 18-, 19-, and 20-pointed stars](https://github.com/liawhs/p-pointed-star/blob/master/readme-imgs/17%20to%2020-pointed%20stars.png)
+
+
+ ![17-, 18-, 19-, and 20-pointed stars](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/17%20to%2020-pointed%20stars.png)
