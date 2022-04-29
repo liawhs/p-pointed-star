@@ -31,7 +31,7 @@ Consider the upper left segment of the figure above, the sum of the interior ang
 <img src="https://render.githubusercontent.com/render/math?math=(q-1)\alpha \%2B 2\beta=180(q-1)">  ------  (2).
 
 
-Substitute (1) into (2) and solve for <img src="https://render.githubusercontent.com/render/math?math=\beta">, we get
+Substituting (1) into (2) and solving for <img src="https://render.githubusercontent.com/render/math?math=\beta">, we get
 
 <img src="https://render.githubusercontent.com/render/math?math=\beta = \frac{180}{p}(q-1)">  ------  (3).
 
@@ -41,7 +41,7 @@ At a vertex, the interior angle <img src="https://render.githubusercontent.com/r
 <img src="https://render.githubusercontent.com/render/math?math=\alpha = x \%2B 2\beta">  ------  (4).
 
 
-Substitute (1) and (3) into (4) and solve for x, we get the interior angle x of a regular p-pointed star
+Substituting (1) and (3) into (4) and solving for x, we get the interior angle x of a regular p-pointed star
 
 <img src="https://render.githubusercontent.com/render/math?math=\large x = \frac{180}{p}[p - 2q]">  ------  (5).
 
@@ -65,7 +65,7 @@ All angles are in degrees.
 ---
 ## Implementation
 
-The turtle module will be used to draw p-pointed star. First, we need to import the turtle module and some functions or methods from other modules.
+The turtle module will be used to draw p-pointed stars. First, we need to import the turtle module and some functions or methods from other modules.
 
 ```
 from turtle import Turtle, Screen 
@@ -74,7 +74,7 @@ from time import sleep
 ``` 
   
        
-I use class to create a Star object. The __init__ method takes p and the radius of the star as arguments
+I use class to create a Star object. The \__init__ method takes p and the radius of the star object as arguments
 
     def __init__(self, p, radius):
         self.p = p
@@ -93,7 +93,7 @@ I use class to create a Star object. The __init__ method takes p and the radius 
 The angles attribute is a dictionary of all possible values of q and the corresponding interior angles of the star object. These key-value pairs are determined by the q_angles method.
 
 
-Prior to the draw method to draw the star figure, I define the following simple methods.
+Prior to the draw method, which is used to draw a regular p-pointed star, I define the following simple methods.
 
     @staticmethod
     def beta(q, p):
@@ -121,7 +121,7 @@ The draw method checks the great common divisor of p and q.
         n = gcd(self.p, q)
 ```
 
-If it equals to one, then we can draw the star figure in one pass.
+If it is equal to one, then we can draw the star figure in one pass.
 ```
         # star in one pass
         length = self.chord(self.radius, self.gamma(q, self.p))
@@ -133,7 +133,7 @@ If it equals to one, then we can draw the star figure in one pass.
             t.end_fill() 
 ```
 
-Otherwise, we need to draw the star figures in n passes.
+Otherwise, we need to draw the star figure in n passes.
 ```
         else:
             # star in n passess since {p/q} = n {p'/q'}
@@ -161,9 +161,9 @@ Otherwise, we need to draw the star figures in n passes.
                     t.end_fill()         
 ```
 
-After drawing the first {p'/q'} and before drawing the next {p'/q'}, we need to move the turtle to a correct location and set the turtle in a correct direction. 
+After the first {p'/q'} is drawn, before starting to draw the next {p'/q'}, we need to move the turtle to a correct location and set the turtle in a correct direction. 
 
-I turn the turtle leftward an angle of beta, move forward along a side of the polygon to reach the next adjacent point of the star, and turn the turtle rightward an angle of 180 – beta – interior angle of the star.
+I turn the turtle leftward an angle of beta, move forward along a side of the polygon to reach the next adjacent point of the star, and turn the turtle rightward an angle of (180 – beta – the interior angle of the star).
 
                     t.left(angle_beta)
                     t.forward(side_length)
@@ -175,7 +175,7 @@ Alternatively, you may let the turtle go to the center of the star, turn the tur
 ---
 ## Sample output
 
- - 5-pointed star pointing at various angles (0, 10, 20, ... 90 degrees)
+ - 5-pointed stars pointing at various angles (0, 10, 20, ... 90 degrees)
  
  
  ![5-pointed star pointing at various angles](https://github.com/liawhs/p-pointed-star/blob/main/readme-imgs/5-pointed%20star%20pointing%20at%20various%20angles.png)
